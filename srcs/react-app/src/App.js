@@ -1,36 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import { FaSignOutAlt, FaBell, FaUserCircle } from 'react-icons/fa';
+import logo from './assets/MUT_LOGO_crop.png';
 
 function App() {
 	return (
 		<div className="App">
-			<header className="App-header">
-				{/* Navbar */}
-				<nav className="navbar">
-					<ul className="navbar-list">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#about">Reserve</a></li>
-						<li><a href="#services">History</a></li>
-						<li><a href="#contact">Management</a></li>
-						<li><a href="#contact">Master</a></li>
-						<li><a href="#contact">Report</a></li>
-					</ul>
-				</nav>
+			<nav className="navbar">
+				<div className="navbar-left">
+					<a href="#home" className="logo">
+						<img src={logo} alt="MUT Logo" />
+					</a>
 
-				{/* Main Content */}
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Learn React
-				</a>
-			</header>
+					<ul className="navbar-links">
+						<li><a href="#reserve">Reserve</a></li>
+						<li><a href="#history">History</a></li>
+						<li><a href="#management">Management</a></li>
+						<li><a href="#master">Master</a></li>
+						<li><a href="#report">Report</a></li>
+					</ul>
+				</div>
+
+				<div className="navbar-icons">
+					<a href="#signout" className="navbar-icon"><FaSignOutAlt /></a>
+					<a href="#notifications" className="navbar-icon"><FaBell /></a>
+					<a href="#profile" className="navbar-icon"><FaUserCircle /></a>
+				</div>
+			</nav>
 		</div>
 	);
 }
