@@ -6,7 +6,7 @@ import logo from '../../assets/MUT_LOGO_crop.png';
 function Navbar() {
 	return (
 		<nav className="navbar">
-			<div className="navbar-left">
+		<div className="navbar-left">
 				<a href="#home" className="logo">
 					<img src={logo} alt="MUT Logo" />
 				</a>

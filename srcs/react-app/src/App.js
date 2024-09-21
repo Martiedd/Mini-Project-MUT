@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/navbar/navbar';
+import Room from './components/management/room';
 
 function App() {
 	return (
@@ -20,8 +21,8 @@ function App() {
 				</a>
 			</header> */}
 			<Navbar />
+			<Room />
 		</div>
 	);
-}
-
+};
 export default App;
