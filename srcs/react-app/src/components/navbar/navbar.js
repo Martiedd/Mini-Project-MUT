@@ -6,14 +6,15 @@ import logo from '../../assets/MUT_LOGO_crop.png';
 function Navbar() {
 	return (
 		<nav className="navbar">
-		<div className="navbar-left">
+			<div className="navbar-left">
 				<a href="#home" className="logo">
 					<img src={logo} alt="MUT Logo" />
 				</a>
 
 				<ul className="navbar-links">
 					{['Reserve', 'History', 'Management', 'Master', 'Report'].map(item => (
-						<li key={item}><a href={`#${item.toLowerCase()}`}>{item}</a></li>
+						<li key={item}>
+							<a href={`#${item.toLowerCase()}`}>{item}</a></li>
 					))}
 				</ul>
 			</div>

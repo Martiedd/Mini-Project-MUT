@@ -19,7 +19,7 @@
     text-decoration: underline; 
 }
 
-.room:hover {
+.selection-zone > p:hover {
     color:  #949ca4;
 }
 
@@ -75,24 +75,7 @@
     margin-left: auto;
 }
 
-.searchbox > input{
-    /*border: #24344c;
-    border-radius: 5px;
-    background-color: #c4d4dc;
-    color: #24344c;
-    font-size: 20px;
-    display: flexbox;
-    justify-content: flex-end;
-    align-items: center;
-    text-align: left;
-    height: 50px;
-    width: 450px;
-    text-indent: 1rem;
-    border: 3px solid purple;*/
-}
 .search-data{
-	/*background-color: aquamarine;*/
-	
     padding: 0 0;
     align-items: end;
     justify-items: flex-end;
@@ -109,7 +92,8 @@
 .input-text{
 	font-size: 20px;
 	height: 50px;
-	width: 250px;
+
+	width: 400px;
 	background-color: #c4d4dc;
 	color: #24344c;
 	text-indent: 1rem;
